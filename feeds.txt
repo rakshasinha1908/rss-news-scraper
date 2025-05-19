@@ -1,0 +1,74 @@
+# UK
+http://feeds.bbci.co.uk/news/rss.xml
+
+# USA
+http://rss.cnn.com/rss/edition.rss
+https://feeds.npr.org/1001/rss.xml
+https://www.nytimes.com/services/xml/rss/nyt/HomePage.xml
+
+# India
+https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms
+https://www.hindustantimes.com/rss/topnews/rssfeed.xml
+
+# Japan
+https://www3.nhk.or.jp/rss/news/cat0.xml
+
+# Middle East
+https://www.aljazeera.com/xml/rss/all.xml
+
+# Canada
+https://www.cbc.ca/cmlink/rss-world
+
+# Australia
+https://www.abc.net.au/news/feed/51120/rss.xml
+
+# Germany
+https://www.dw.com/en/top-stories/s-9097?maca=en-rss-en-all-1573-rdf
+
+# France
+https://www.lemonde.fr/rss/une.xml
+
+# Russia
+https://tass.com/rss/v2.xml
+
+# China
+http://www.chinadaily.com.cn/rss/china_rss.xml
+
+# South Korea
+https://www.koreatimes.co.kr/www/rss/rss.xml
+
+# Singapore
+https://www.straitstimes.com/news/singapore/rss.xml
+
+# Malaysia
+https://www.thestar.com.my/rss/editors-choice
+
+# Indonesia
+https://www.thejakartapost.com/rss
+
+# Brazil
+https://g1.globo.com/rss/g1/
+
+# South Africa
+https://www.news24.com/rss
+
+# Mexico
+https://mexiconewsdaily.com/news/feed/
+
+# UAE
+https://gulfnews.com/rss?generatorName=RSS-Generator
+
+# Pakistan
+https://www.dawn.com/feeds/home
+
+# Bangladesh
+https://www.thedailystar.net/frontpage/rss.xml
+
+# Philippines
+https://www.philstar.com/rss/headlines
+
+# Turkey
+https://www.hurriyetdailynews.com/rss.aspx
+
+# Italy
+https://www.ansa.it/sito/ansait_rss.xml
