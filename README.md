@@ -1,17 +1,23 @@
+
+
+---
+
+## ✅ Improved `README.md`
+
 ```markdown
 # 🌐 News Aggregator via RSS Feed Parser
 
-This project is a Python-based RSS feed scraper that extracts and serves news articles from over 20 countries using public RSS feeds. It stores the data, detects language, and exposes it via a Flask API.
+A Python-based news scraper that extracts headlines and summaries from over 20 countries using public RSS feeds. The data is structured, language-tagged, and served via a Flask API.
 
 ---
 
 ## 🚀 Features
 
-- 🔎 Scrapes news from 27 global RSS feeds
-- 📰 Extracts structured data: title, summary, publication date, country, source, link
-- 🌍 Detects language of articles
-- 🌐 Flask API to access and filter news
-- ✅ Handles timeouts, missing fields, and duplicate articles
+- 🌍 Scrapes news from 27 global RSS feeds
+- 📄 Extracts structured data: title, summary, date, country, source, and link
+- 🈯 Detects language of articles using `langdetect`
+- 🌐 Provides a Flask API to access and filter news
+- ✅ Handles timeouts, missing fields, and duplicate entries
 
 ---
 
@@ -33,7 +39,7 @@ rss\_news\_scraper/
 
 ## 🛠 Dependencies
 
-Install required libraries using:
+Install required libraries:
 
 ```bash
 pip install feedparser pandas requests flask langdetect
@@ -52,8 +58,9 @@ python main.py
 This will:
 
 * Load RSS feeds from `feeds.txt`
-* Parse and extract article info
-* Save results to `output.csv` with language detection
+* Parse and extract article data
+* Detect article language
+* Save all data to `output.csv`
 
 ---
 
@@ -63,10 +70,10 @@ This will:
 python app.py
 ```
 
-Then open in your browser:
+Access the API at:
 
 * `http://127.0.0.1:5000/` – Welcome message
-* `http://127.0.0.1:5000/news` – All news
+* `http://127.0.0.1:5000/news` – All news articles
 * `http://127.0.0.1:5000/news?country=India` – Filter by country
 * `http://127.0.0.1:5000/news?lang=en` – Filter by language
 
@@ -74,33 +81,42 @@ Then open in your browser:
 
 ## ✅ Sample Output
 
-| Title            | Source | Country | Language | URL                                       |
-| ---------------- | ------ | ------- | -------- | ----------------------------------------- |
-| "PM speaks..."   | BBC    | UK      | en       | [http://bbc.co.uk/](http://bbc.co.uk/)... |
-| "राहुल गांधी..." | TOI    | India   | hi       | [http://toi.in/](http://toi.in/)...       |
+| Title          | Source | Country | Language | URL                       |
+| -------------- | ------ | ------- | -------- | ------------------------- |
+| PM speaks...   | BBC    | UK      | en       | [Link](http://bbc.co.uk/) |
+| राहुल गांधी... | TOI    | India   | hi       | [Link](http://toi.in/)    |
 
 ---
 
-## 💡 Notes
+## 📌 Notes
 
-* All articles are stored in UTF-8 encoding.
-* Duplicate and empty entries are filtered automatically.
-* Timeouts prevent the script from hanging on slow feeds.
-
----
-
-## 📌 Optional Enhancements Implemented
-
-* [x] Language detection using `langdetect`
-* [x] Flask API to serve and filter news
+* Articles are encoded in UTF-8
+* Duplicates are automatically removed
+* Network failures are handled with timeouts
+* Designed to be scalable and extensible
 
 ---
 
-## 📬 Contact
+## ✨ Bonus Features Implemented
+
+* ✅ Language detection via `langdetect`
+* ✅ REST API using Flask to serve filtered news
+
+---
+
+## 🙋‍♀️ Contact
 
 **Raksha Sinha**
-For queries or feedback, feel free to reach out.
+For queries or feedback, feel free to connect.
 
 ```
 
+---
 
+Let me know if you want:
+- A GitHub repo description to match this
+- A zipped version of the full project
+- Or help deploying it somewhere (Render/Railway)
+
+Ready when you are!
+```
