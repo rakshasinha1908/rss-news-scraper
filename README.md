@@ -1,17 +1,15 @@
 
 
----
 
-## ✅ Improved `README.md`
 
 ```markdown
-# 🌐 News Aggregator via RSS Feed Parser
+## 🌐 News Aggregator via RSS Feed Parser
 
 A Python-based news scraper that extracts headlines and summaries from over 20 countries using public RSS feeds. The data is structured, language-tagged, and served via a Flask API.
 
 ---
 
-## 🚀 Features
+### 🚀 Features
 
 - 🌍 Scrapes news from 27 global RSS feeds
 - 📄 Extracts structured data: title, summary, date, country, source, and link
