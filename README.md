@@ -1,9 +1,4 @@
-
-
-
-
-```markdown
-## 🌐 News Aggregator via RSS Feed Parser
+🌐 **News Aggregator via RSS Feed Parser**
 
 A Python-based news scraper that extracts headlines and summaries from over 20 countries using public RSS feeds. The data is structured, language-tagged, and served via a Flask API.
 
@@ -11,45 +6,42 @@ A Python-based news scraper that extracts headlines and summaries from over 20 c
 
 ### 🚀 Features
 
-- 🌍 Scrapes news from 27 global RSS feeds
-- 📄 Extracts structured data: title, summary, date, country, source, and link
-- 🈯 Detects language of articles using `langdetect`
-- 🌐 Provides a Flask API to access and filter news
-- ✅ Handles timeouts, missing fields, and duplicate entries
+* 🌍 Scrapes news from 27 global RSS feeds
+* 📄 Extracts structured data: title, summary, date, country, source, and link
+* 🈯 Detects language of articles using `langdetect`
+* 🌐 Provides a Flask API to access and filter news
+* ✅ Handles timeouts, missing fields, and duplicate entries
 
 ---
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 ```
-
-rss\_news\_scraper/
-├── main.py          # Core script for scraping and saving data
-├── app.py           # Flask API to serve the data
-├── feeds.txt        # List of 20+ RSS feed URLs
-├── output.csv       # Output CSV file with structured news
-├── utils.py         # (Optional) Helper functions for modular code
-├── README.md        # Project documentation
-
-````
+rss_news_scraper/
+├── main.py          → Core script for scraping and saving data  
+├── app.py           → Flask API to serve the data  
+├── feeds.txt        → List of 20+ RSS feed URLs  
+├── output.csv       → Output CSV file with structured news    
+├── README.md        → Project documentation  
+```
 
 ---
 
-## 🛠 Dependencies
+### 🛠 Dependencies
 
 Install required libraries:
 
-```bash
+```
 pip install feedparser pandas requests flask langdetect
-````
+```
 
 ---
 
-## ⚙️ How to Run
+### ⚙️ How to Run
 
-### 1. Scrape News Data
+**1. Scrape News Data**
 
-```bash
+```
 python main.py
 ```
 
@@ -62,22 +54,22 @@ This will:
 
 ---
 
-### 2. Start the Flask API
+**2. Start the Flask API**
 
-```bash
+```
 python app.py
 ```
 
 Access the API at:
 
-* `http://127.0.0.1:5000/` – Welcome message
-* `http://127.0.0.1:5000/news` – All news articles
-* `http://127.0.0.1:5000/news?country=India` – Filter by country
-* `http://127.0.0.1:5000/news?lang=en` – Filter by language
+* [http://127.0.0.1:5000/](http://127.0.0.1:5000/) – Welcome message
+* [http://127.0.0.1:5000/news](http://127.0.0.1:5000/news) – All news articles
+* [http://127.0.0.1:5000/news?country=India](http://127.0.0.1:5000/news?country=India) – Filter by country
+* [http://127.0.0.1:5000/news?lang=en](http://127.0.0.1:5000/news?lang=en) – Filter by language
 
 ---
 
-## ✅ Sample Output
+### ✅ Sample Output
 
 | Title          | Source | Country | Language | URL                       |
 | -------------- | ------ | ------- | -------- | ------------------------- |
@@ -86,7 +78,7 @@ Access the API at:
 
 ---
 
-## 📌 Notes
+### 📌 Notes
 
 * Articles are encoded in UTF-8
 * Duplicates are automatically removed
@@ -95,26 +87,15 @@ Access the API at:
 
 ---
 
-## ✨ Bonus Features Implemented
+### ✨ Bonus Features Implemented
 
 * ✅ Language detection via `langdetect`
 * ✅ REST API using Flask to serve filtered news
 
 ---
 
-## 🙋‍♀️ Contact
+### 🙋‍♀️ Contact
 
 **Raksha Sinha**
-For queries or feedback, feel free to connect.
-
-```
-
----
-
-Let me know if you want:
-- A GitHub repo description to match this
-- A zipped version of the full project
-- Or help deploying it somewhere (Render/Railway)
-
-Ready when you are!
-```
+For queries or feedback, feel free to connect
+LinkedIn - https://www.linkedin.com/in/raksha-sinha-7771b8278/ 
