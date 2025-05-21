@@ -105,3 +105,25 @@ if not df.empty:
     print(f"\n✅ Successfully saved {len(df)} articles to output.csv")
 else:
     print("\n⚠️ No articles were parsed. Please check RSS URLs and try again.")
+    
+
+# To Generate summary table
+summary = df.groupby(["Country", "Source"]).size().reset_index(name="Total Articles")
+summary["Total Historical Data"] = "Current Feed Only"  
+
+# Save to CSV
+summary.to_csv("summary_table.csv", index=False)
+print("\n📊 Summary table saved as summary_table.csv")
+
+
+# -------------------------
+# NOTE:
+# Although feeds.txt contains 27 RSS feed URLs from various countries,
+# the final summary table may include fewer sources. This happens because:
+# - Some feeds return no articles (inactive or empty)
+# - Some feeds fail to parse due to connection errors or timeouts
+# - Duplicate articles (based on Title and URL) are removed
+# - Only feeds that successfully return valid articles are included
+# As a result, the summary table reflects only the data-producing sources.
+# -------------------------
+
